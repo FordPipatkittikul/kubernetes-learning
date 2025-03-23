@@ -50,7 +50,6 @@ kubernetes does not deploy containers directly on the worker nodes. The containe
 A rollout is the process of deploying a new version of an application without disrupting availability. Kubernetes Deployments manage rollouts automatically.
 
 
-
 ![alt text](image.png)
 
 # 3 kubectl: Kubernetes Command-Line Tool
@@ -170,3 +169,8 @@ Create a service to expose a deployment to the outside world:
 
 `kubectl expose deployment <deployment-name> --type=LoadBalancer --port=80`
 
+## 3.5 Service
+
+1) List all services in the cluster
+
+`kubectl get services`
